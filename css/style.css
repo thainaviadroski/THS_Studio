@@ -1,0 +1,24 @@
+html {
+  scroll-behavior: smooth; }
+
+.subtitleCaption {
+  font-size: 1.8em; }
+
+.tittleCaption {
+  font-weight: 500; }
+
+.subtitleCaption {
+  font-size: 1.8em; }
+
+.tittleCaption {
+  font-weight: 500; }
+
+/*My style form*/
+.formBox {
+  width: 100%;
+  height: auto; }
+
+.fTextArea {
+  resize: none; }
+
+/*# sourceMappingURL=style.css.map */
