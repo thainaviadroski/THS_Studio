@@ -36,6 +36,7 @@ build/Release
 node_modules/
 jspm_packages/
 .sass-cache/
+PSD/
 
 
 # TypeScript v1 declaration files
@@ -45,7 +46,7 @@ typings/
 .npm
 .scssc
 .css.map
-
+.psd
 # Optional eslint cache
 .eslintcache
 
