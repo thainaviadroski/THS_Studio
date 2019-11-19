@@ -1,0 +1,19 @@
+{
+  "name": "ths-studio-site",
+  "version": "1.0.0",
+  "description": "Site para THS Studio, empresa de marketing Digital e Desenvolvimento Web. ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaketayler/THS_Studio.git"
+  },
+  "author": "Jake Tayler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaketayler/THS_Studio/issues"
+  },
+  "homepage": "https://github.com/jaketayler/THS_Studio#readme"
+}
