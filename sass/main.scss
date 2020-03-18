@@ -1,2 +1,15 @@
 // Variaveis de cores
+$primary:#F2F2F2;
+$light:#3A3C40;
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.cFooter{ 
+  max-width: 1920px;
+  width: 100%;
+  background-color: $light;
+}
+// import bootstrap for my project.
 @import 'node_modules/bootstrap/scss/bootstrap';
