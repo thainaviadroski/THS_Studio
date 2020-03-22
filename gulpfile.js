@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require ('browser-sync').create();
-const minifyCSS = require('gulp-minify-css');
+// const minifyCSS = require('gulp-minify-css');
 
 function style(){
     return gulp.src('./sass/*.scss')
@@ -9,22 +9,27 @@ function style(){
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
 }
-function miniCSS(){
-    return gulp.src('./css/*.css')
-    .pipe(minifyCSS({keepBreaks:false}))
-    .pipe(gulp.dest('./css/*.min.css'));
-}
+// function miniCSS(){
+//     return gulp.src('./css/*.css')
+//     .pipe(minifyCSS({keepBreaks:true}))
+//     .pipe(gulp.dest('./css/'));
+// }
+
+function moveFile() {
+     return gulp.src(['node_modules/jquery/dist/*.js','node_modules/popper.js/dist/umd/*.js','node_modules/bootstrap/dist/js/*.js'])
+     .pipe(gulp.dest('js/'));
+  }
 function watch(){
     browserSync.init({
         server:{
             baserDir:'./'
         }
     });
-    gulp.watch('./scss/*.scsss', style).on('change',browserSync.reload);
+    gulp.watch('./scss/*.scsss', style);
     gulp.watch('./*.html').on('change',browserSync.reload);
     gulp.watch('./js/*.js').on('change',browserSync.reload);
 }
 
-const defaultTaskt = gulp.parallel(style,watch)
+const defaultTaskt = gulp.parallel(style, moveFile,watch);
 
 exports.default = defaultTaskt;
