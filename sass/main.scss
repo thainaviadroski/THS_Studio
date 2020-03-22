@@ -1,15 +1,23 @@
 // Variaveis de cores
 $primary:#F2F2F2;
 $light:#3A3C40;
+$dark: #FFF;
 
+// Alterações 
 .container-fluid{
   padding-left: 0px;
   padding-right: 0px;
 }
+.font-sizer{
+  font-size: 1.20em;
+}
+// https://coolors.co/000000-33363b-b3b3b3-e5e5e5-ffffff
+
 .cFooter{ 
   max-width: 1920px;
   width: 100%;
   background-color: $light;
 }
+
 // import bootstrap for my project.
 @import 'node_modules/bootstrap/scss/bootstrap';
