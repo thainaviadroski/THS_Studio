@@ -4,7 +4,7 @@
     <title>THS Studio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="img/icon.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Menus do site -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-index">
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-light nav-index">
       <div class="container">
         <a class="navbar-brand brand-size" href="#">
           <i class="fas fa-code"></i>THS Studio
@@ -35,14 +35,16 @@
               <a class="nav-link active" href="#">Serviços</a>
            </li>
             <li class="nav-item">
-               <a class="nav-link active" href="#">Contato</a>
+               <a class="btn btn-outline-dark text-primary" style="width: 75px;" href="contato.html"> 
+                 <i class="fas fa-envelope"></i>
+              </a>
             </li>            
           </ul>
         </div>
       </div>
     </nav>
     <!-- Slide Show -->
-    <div class="container-fluid header">
+    <div class="container-fluid header ">
       <div id="carouselId" class="carousel slide" data-ride="carousel">
 
         <div class="carousel-inner" role="listbox">
@@ -57,31 +59,95 @@
     </div>
 
 <!-- Conteudo -->
-    <div class="container">
-      <div class="row p-4">
-        <div class="card col-4">
-          <img class="card-img-top img-fluid" src="./img/banner_03.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title text-center">SEO</h4>
-            <p class="card-text text-center">
-              Otimize seu site para estar no topo das principais ferramentes de busca do mundo.
-            </p>
-          </div>  
-          <div class="card-footer text-center">
-            <a href="" class="btn btn-success"> Saiba mais!</a>
-          </div>    
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <img class="card-img-top" src="./img/img_card_00.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Marketing Digital</h4>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aliquam fugiat magni corrupti cum sapiente voluptatum error, quis adipisci. Voluptas, animi. Nesciunt reprehenderit, voluptatem animi temporibus quae corrupti ipsa. Vitae.</p>
+            </div>
+          </div>
         </div>
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <img class="card-img-top" src="./img/img_card_01.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Desenvolvimento de Sites</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam atque, temporibus, ad dolore dolores vel perspiciatis similique voluptatum voluptate, aut vero quidem iste! Nam error iste nisi repellat possimus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <img class="card-img-top" src="./img/img_00.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">SEO</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam atque, temporibus, ad dolore dolores vel perspiciatis similique voluptatum voluptate, aut vero quidem iste! Nam error iste nisi repellat possimus!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-3">
+        <div class="jumbotron-fluid bg-light text-center text-dark col-12">
+          <h1 class="display-5">Presença digital</h1>
+          <hr class="my-2">
+          <p>O mundo está cada vez mais digital, isso é um fato imutavel, não fique para trás nesse processo.</p>
+          <p>Solicite seu orçamento sem compromisso.</p>
+          <p class="lead">
+            <div class="form-group">
+              <label for=""></label>
+              <input type="email" class="form-control text-center ml-auto mr-auto col-4" name="" id="" aria-describedby="emailHelpId" placeholder="exemplo@exemplo.com">
+            </div>
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Enviar</a>
+          </p>
+        </div>
+      </div>
     </div>
 
-    <footer class="cFooter">
+    <!-- Rodapé -->
+    <footer class="cFooter mt-5 p-3">
       <div class="container">
-        Hey
+        <div class="row">
+          <div class="col-6 social">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Incio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portifólio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Serviços</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 ">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fab fa-facebook-f" ></i> Facebook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-behance"></i> Bahance</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-muted">
+        Todos os direitos reservados 
       </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
