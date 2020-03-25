@@ -1,5 +1,5 @@
 .brand-size {
-  font-size: 2.25em; }
+  font-size: 1.75em; }
 
 .container-fluid {
   padding-left: 0px;
@@ -13,3 +13,11 @@
 
 .header {
   margin-top: -100px; }
+
+.cForm {
+  margin: auto;
+  max-width: 600px;
+  width: 100%; }
+
+textarea {
+  resize: none; }
