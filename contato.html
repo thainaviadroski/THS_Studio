@@ -1,117 +1,146 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <title>THS Studio</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="img/icon.png" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  </head>
-  <body>
-    <!-- Menus do site -->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-index">
-      <div class="container">
-        <a class="navbar-brand brand-size" href="#">
-          <i class="fas fa-code"></i>THS Studio
-        </a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio </a>
+
+<head>
+  <title>THS Studio</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="img/icon.png" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Menus do site -->
+  <nav class="navbar navbar-expand-lg navbar-dark  bg-light nav-index">
+    <div class="container">
+      <a class="navbar-brand brand-size" href="index.html">
+        <i class="fas fa-code"></i>THS Studio
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Início </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="protifolio.html">Portifólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-dark text-primary" style="width: 75px;" href="contato.html">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Slide Show -->
+  <div class="container-fluid header ">
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="img-fluid" src="img/banner_01.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="display-4">Explore novas possibilidades para sua marca.</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid" src="img/banner_02.jpg" alt="Second slide">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conteudo -->
+  <div class="container mt-5">
+      <form action="send.php" class="cForm" method="POST">
+          <div class="form-group">
+            <label for="iName"> Nome Completo:</label>
+            <input type="text" name="" id="iName" class="form-control" placeholder="Ex: João da Silva" >
+          </div>
+          <div class="form-group">
+            <label for="">E-mail</label>
+            <input type="email" class="form-control" name="" id=""  placeholder="exemplo@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="">Serviço:</label>
+            <select class="form-control" name="services" id="services">
+              <option>Contrução de Site</option>
+              <option>Design</option>
+              <option>Marketing Digital</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Mensagem:</label>
+            <textarea class="form-control" name="" id="" rows="3" ></textarea>
+          </div>
+          <div class="row mr-auto ml-auto">
+            <button type="submit" class="btn btn-light">Enviar</button>
+            <button type="rest" class="btn ml-3 btn-primary">limpar</button>
+          </div>
+      </form>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="cFooter mt-5 p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 social">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Portifólio</a>
+              <a class="nav-link" href="portifolio.html">Portifólio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Serviços</a>
-           </li>
+              <a class="nav-link" href="servicos.html">Serviços</a>
+            </li>
             <li class="nav-item">
-               <a class="btn btn-outline-light text-primary" style="width: 75px;" href="contato.html"> 
-                 <i class="fas fa-envelope"></i>
-              </a>
-            </li>            
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 ">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-behance"></i> Bahance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-github"></i> GitHub</a>
+            </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- Slide Show -->
-    <div class="container-fluid header ">
-      <div id="carouselId" class="carousel slide" data-ride="carousel">
-
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="img-fluid" src="img/banner_01.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="img-fluid"  src="img/banner_02.jpg"  alt="Second slide">
-          </div>
-         </div>
-      </div>
     </div>
-
-<!-- Conteudo -->
-    <div class="container mt-5">
-      <h2 class="display-5 text-center">Solicite seu orçamento!</h2>
-      <hr class="my-2">
-      <form action="send.php" method="POST">
-        <div class="form-group">
-          <label for=""></label>
-          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-          <small id="helpId" class="text-muted">Help text</small>
-        </div>
-
-      </form>
+    <div class="text-center text-muted">
+      Todos os direitos reservados
     </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
 
-    <!-- Rodapé -->
-    <footer class="cFooter mt-5 p-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 social">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Incio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portifólio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Serviços</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 ">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#"><i class="fab fa-facebook-f" ></i> Facebook</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-instagram"></i> Instagram</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-behance"></i> Bahance</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="text-center text-muted">
-        Todos os direitos reservados 
-      </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  </body>
 </html>
