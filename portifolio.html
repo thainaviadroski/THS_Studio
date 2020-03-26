@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Início - THS Studio</title>
+  <title>Portifólio - THS Studio</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Font Awesome -->
+  <!-- Font Awesome --> 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -66,55 +66,82 @@
 
   <!-- Conteudo -->
   <div class="container mt-5">
+    <h1 class="display-4 text-center">Portifólio:</h1>
+    <p class="lead text-center">Conheça alguns dos projetos desenvolvidos por nós.</p>
+
     <div class="row">
-      <div class="col-lg-4">
-        <div class="card border-0">
-          <img class="card-img-top" src="./img/img_card_00.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Marketing Digital</h4>
-            <p class="card-text">Te ajudamos a traçar as melhores estrategia para dominar as midias sociais.</p>
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/400x250" alt="">
+          <div class="card-body text-center">
+            <h4 class="card-title">Empresa Z</h4>
+            <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#modelId1">
+              Saiba Mais
+            </button>
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card border-0">
-          <img class="card-img-top" src="./img/img_card_01.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Desenvolvimento de Sites</h4>
-            <p class="card-text">Projetos inteiramente customizado, para atender a sua necessidade</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card border-0">
-          <img class="card-img-top" src="./img/img_00.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">SEO</h4>
-            <p class="card-text">Sua marca no topo dos principais sites de busca do mundo</p>
+
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/400x250" alt="">
+          <div class="card-body text-center">
+            <h4 class="card-title">Empresa X</h4>
+            <button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#modelId2">
+              Saiba Mais
+            </button>
           </div>
         </div>
       </div>
     </div>
-
-
-    <!-- <div class="row mt-3">
-      <div class="jumbotron-fluid bg-light text-center text-dark col-12">
-        <h1 class="display-5">Presença digital</h1>
-        <hr class="my-2">
-        <p>O mundo está cada vez mais digital, isso é um fato imutavel, não fique para trás nesse processo.</p>
-        <p>Solicite seu orçamento sem compromisso.</p>
-        <p class="lead">
-          <div class="form-group">
-            <label for=""></label>
-            <input type="email" class="form-control text-center ml-auto mr-auto col-4" name="" id=""
-              aria-describedby="emailHelpId" placeholder="exemplo@exemplo.com">
-          </div>
-          <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Enviar</a>
-        </p>
-      </div>
-    </div> -->
   </div>
 
+
+  <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modelId1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog  modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Empresa z</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-4"><img class="card-img-top" src="https://via.placeholder.com/400x250" alt=""></div>
+            <div class="col-lg-8">
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores perferendis et similique libero, illum debitis porro ullam neque, voluptatum amet esse ipsam quo. Consequuntur ipsum quo assumenda nobis veritatis?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog  modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Empresa X</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-4"><img class="card-img-top" src="https://via.placeholder.com/400x250" alt=""></div>
+            <div class="col-lg-8">
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores perferendis et similique libero, illum debitis porro ullam neque, voluptatum amet esse ipsam quo. Consequuntur ipsum quo assumenda nobis veritatis?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Rodapé -->
   <footer class="cFooter mt-5 p-3">
     <div class="container">
@@ -125,7 +152,7 @@
               <a class="nav-link active" href="index.html">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="portifolio.html">Portifólio</a>
+              <a class="nav-link" href="portifolio.html">Portifólio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="servicos.html">Serviços</a>

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>THS Studio</title>
+  <title>Contato - THS Studio</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,7 +32,7 @@
             <a class="nav-link" href="index.html">Início </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="protifolio.html">Portifólio</a>
+            <a class="nav-link disabled " href="protifolio.html">Portifólio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="servicos.html">Serviços</a>
@@ -69,27 +69,30 @@
       <form action="send.php" class="cForm" method="POST">
           <div class="form-group">
             <label for="iName"> Nome Completo:</label>
-            <input type="text" name="" id="iName" class="form-control" placeholder="Ex: João da Silva" >
+            <input type="text" name="name" id="iName" class="form-control" placeholder="Ex: João da Silva" >
           </div>
           <div class="form-group">
             <label for="">E-mail</label>
-            <input type="email" class="form-control" name="" id=""  placeholder="exemplo@exemplo.com">
+            <input type="email" class="form-control" name="email" id=""  placeholder="exemplo@exemplo.com">
           </div>
           <div class="form-group">
             <label for="">Serviço:</label>
-            <select class="form-control" name="services" id="services">
-              <option>Contrução de Site</option>
-              <option>Design</option>
-              <option>Marketing Digital</option>
+            <select class="form-control" name="assunto" id="services">
+              <option value="Contrução de Site">Contrução de Site</option>
+              <option value="Design">Design</option>
+              <option value="Marketing Digital">Marketing Digital</option>
             </select>
           </div>
           <div class="form-group">
             <label for="">Mensagem:</label>
             <textarea class="form-control" name="" id="" rows="3" ></textarea>
           </div>
+          <div class="sucesso">
+            Sua mensagem foi enviada.
+          </div>
           <div class="row mr-auto ml-auto">
             <button type="submit" class="btn btn-light">Enviar</button>
-            <button type="rest" class="btn ml-3 btn-primary">limpar</button>
+            <button type="reset" class="btn ml-3 btn-primary">limpar</button>
           </div>
       </form>
   </div>
@@ -104,7 +107,7 @@
               <a class="nav-link active" href="index.html">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portifolio.html">Portifólio</a>
+              <a class="nav-link disabled" href="portifolio.html">Portifólio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="servicos.html">Serviços</a>
@@ -141,6 +144,16 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.js"></script>
+
+<script>
+  var url=window.location.href;    
+  
+  if(url == 'http://jaketayler.github.io/THS_Studio/contato.html?erro'){
+    alert('Sua mensagem não foi enviada tente novamente.');
+  }
+  
+
+</script>
 </body>
 
 </html>
