@@ -13,7 +13,7 @@
     $body = "Nome:".$name. "\r\n".
             "Email:".$email. "\r\n".
             "Mensagem:". $msg;
-    $header = "From:thainav2010@gmail.com"."\r\n"
+    $header = "From:contato@studioths.net"."\r\n"
             ."Replay-to".$email. "\r\n"
             ."X=Mailer:PHP/".phpversion();
     
