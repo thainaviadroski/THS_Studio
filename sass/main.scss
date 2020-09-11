@@ -18,6 +18,11 @@ $dark: #FFF;
   width: 100%;
   background-color: $light;
 }
-
+.sucesso{
+  width: auto;
+  height: 200;
+  color: #FFFFFF;
+  background-color: green;
+}
 // import bootstrap for my project.
 @import 'node_modules/bootstrap/scss/bootstrap';
